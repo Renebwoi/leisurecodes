@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #a22be2;
+}
+.hero{/*to make it adjustable*/
+width: 300px;
+height: 30px;
+background: #e7f523;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 0;
+border-style: inset;
+border-width: (4px,5px);
+border-radius: 5px;
+border-color: rgb(14, 243, 26);
+
+}
+.Num{
+    width: 30px;
+    height: 20px;
+    background: #23d6f5;
+    display: flexbox;
+    align-items: center;
+    justify-content: space-evenly;
+}

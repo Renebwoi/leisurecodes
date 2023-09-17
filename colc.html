@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Calculator</title>
+            <link rel="stylesheet" href="colc.css">
+    </head>
+
+<body>    
+
+    <div id="bac" class="bac" name="bac">
+<br>
+<div class="space"></div>
+    <!--html here-->
+
+    <div class="center" id="center" style="height: 500px; width: 500px;">
+<table class="centar">
+
+<thead>
+<th colspan="3"><p class= "hero";  id="output"></p></th>
+</thead>
+
+<tbody>
+  <!--<tr>  
+<td colspan="3" padding="none" class="displey" id="displey">
+    <p></p>
+</td>
+  </tr>-->
+
+    
+<tr>
+    <td><button type="button" class="key" onclick="include('*')">*</button></td>
+    <td><button type="button" class="key" onclick="include('/')">/</button></td>
+    <td><button type="button" class="key" onclick="include('%')">%</button></td>
+</tr>
+    
+<tr>
+    <td><button type="button" class="key" onclick="include('0')">0</button></td>
+    <td><button type="button" class="key" onclick="include('+')">+</button></td>
+    <td><button type="button" class="key" onclick="include('-')">-</button></td>
+</tr>
+
+<tr>
+<td><button type="button" class="key" onclick="include('1')">1</button></td>
+<td><button type="button" class="key" onclick="include('2')">2</button></td>
+<td><button type="button" class="key" onclick="include('3')">3</button>
+</tr>
+
+<tr>
+<td><button type="button" class="key" onclick="include('4')">4</button></td>
+<td><button type="button" class="key" onclick="include('5')">5</button></td>
+<td><button type="button" class="key" onclick="include('6')">6</button></td>
+</tr>
+
+<tr>
+<td><button type="button" class="key" onclick="include('7')">7</button></td>
+<td><button type="button" class="key" onclick="include('8')">8</button></td>
+<td><button type="button" class="key" onclick="include('9')">9</button></td>
+</tr>
+
+
+
+<tr>
+<td><button type="button" class="key" onclick="clr()">Clear</button></td>
+<td><button type="button" class="key" onclick="bckSpace()">Back</button></td>
+<!-- adding two actions to an onclick attribute-->
+<td><button type="button" class="key" onclick="doBoth()" ondblclick="changR()"><span style="color: rgb(102, 247, 19); font-size: 10px;">=</span></button></td>
+</tr>
+
+</form>
+
+</tbody>
+</table>
+
+<p id="texxt"> This is a simple calculator that does the basic functions. More updates coming soon</p>
+<button type="button" onclick="disPlay()">Details</button>
+<button type="button" onclick="hiDe()">Hide</button>
+<button type="button" onclick="changR()">Change Picture</button>
+<button type="button" onclick="lightShow()">lightShow</button>
+    </div>
+
+</div>
+
+<!--<div name="imoge"  class="imoge"><img src="exer.jpg" id="imoge" class="imgee">
+    <button type="button" onclick="setSrcAttribute()">Show Image</button>
+    <button type="button" onclick="divBackground()">Imager</button>
+    </div>-->
+
+<!--Javascript from here-->
+<script src="colc.js"></script>
+</body>
+</html>
